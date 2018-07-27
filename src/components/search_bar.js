@@ -1,33 +1,31 @@
-import React, { Component } from 'react';
-// import ytSearch from 'youtube-api-search';
+// import React, { Component } from 'react';
 
-class SearchBar extends Component {
-  constructor(props) {
-    super(props);
+// class SearchBar extends Component {
+//   constructor(props) {
+//     super(props);
 
-    this.state = {
-      search: ''
-    }
+//     this.state = {
+//       term: ''
+//     }
 
-    this.onInputChange = this.onInputChange.bind(this);
-  }
+//   }
 
-  onInputChange(e) {
-    this.setState({ [e.target.name]: e.target.value });
-    console.log(e.target.value);
-  }
+//   onInputChange(term) {
+//     this.setState({ term });
+//     this.props.onSearchTermChange(term);
+//   }
 
-  render() {
-    return (
-      <div>
-        <input 
-          onChange={this.onInputChange} 
-          name="search"
-        />
-        Value of the input: { this.state.search }
-      </div>
-    )
-  }
-};
+//   render() {
+//     return (
+//       <div>
+//         <input 
+//           value={this.state.term}
+//           onChange={event => this.onInputChange(event.target.value)}
+//         />
+//         // Value of the input: { this.state.search }
+//       </div>
+//     )
+//   }
+// };
 
-export default SearchBar;
+// export default SearchBar;
